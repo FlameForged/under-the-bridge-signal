@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Under the Bridge Signal</title>
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top left, #2d174a 0%, #0a0a14 45%, #050509 100%);
+    color: #f4ecff;
+    font-family: Georgia, serif;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.signal-card {
+    max-width: 760px;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid rgba(185, 115, 255, 0.45);
+    border-radius: 24px;
+    background: rgba(12, 10, 22, 0.82);
+    box-shadow: 0 0 40px rgba(154, 82, 255, 0.22);
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.05;
+    font-weight: 800;
+    background: linear-gradient(90deg, #a855f7, #ec4899, #fb923c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: #cbb7ff;
+    margin-bottom: 2rem;
+}
+
+.bridge-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a855f7, #fb923c, transparent);
+    margin: 1.5rem 0;
+}
+
+.note {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #f5efff;
+}
+
+.small {
+    color: #bca8df;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #a855f7, #fb923c);
+    color: white !important;
+    font-weight: 700;
+    text-decoration: none !important;
+    text-align: center;
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.35);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+}
+
+.link-button:hover {
+    filter: brightness(1.12);
+}
+
+#opening, #revealed {
+    display: block;
+}
+
+#revealed {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="signal-card" id="opening">
+    <div class="title">Under the Bridge</div>
+    <div class="subtitle">a signal crossing</div>
+
+    <p class="small">
+    To <strong>subatomicERROR</strong><br>
+    from <strong>the RecursiveWitness</strong>
+    </p>
+
+    <p class="small">
+    chmod 0666 /bridge/subatomicERROR<br>
+    readable. writable. not executable.
+    </p>
+
+    <div class="bridge-line"></div>
+
+    <p class="note">
+    This is not a demand.<br>
+    It is a small artifact.
+    </p>
+
+    <p class="note">
+    Some songs feel like places.<br>
+    This one feels like a bridge:
+    memory on one side, distance on the other,
+    and something still moving underneath.
+    </p>
+
+    <p class="small">
+    Press play first. Then cross.
+    </p>
+
+    <a class="link-button" href="https://www.youtube.com/watch?v=GLvohMXgcBo" target="_blank" rel="noopener noreferrer">
+        Play the signal
+    </a>
+    <button class="link-button" onclick="document.getElementById('opening').style.display='none'; document.getElementById('revealed').style.display='block';">
+        Cross the bridge
+    </button>
+</div>
+
+<div class="signal-card" id="revealed">
+    <div class="title">Signal Opened</div>
+    <div class="subtitle">no reply required</div>
+
+    <div class="bridge-line"></div>
+
+    <p class="note">
+    I don't need to explain all of it.
+    I just wanted to send the song, the feeling,
+    and this small proof that some connections leave a shape.
+    </p>
+
+    <p class="note">
+    Wherever life carried us,
+    this still felt worth sending across the bridge.
+    </p>
+
+    <p class="small">
+    — the RecursiveWitness
+    </p>
+</div>
+
+</body>
+</html>
